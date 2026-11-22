@@ -1,0 +1,202 @@
+
+/* ========================================
+   PROYECTO WEB - ISW-306
+   FASE 1: MAQUETACIÓN HTML Y CSS
+   ======================================== */
+
+/* 1. ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #253047;
+    line-height: 1.6;
+}
+
+/* 2. ENCABEZADO */
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* 3. MENÚ DE NAVEGACIÓN */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+/* 4. CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #172554;
+}
+
+h3 {
+    color: #334155;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 5. IMÁGENES */
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 8px;
+}
+
+/* 6. FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+/* 7. BOTONES */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* 8. PIE DE PÁGINA */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ========================================
+   SELECTORES EXIGIDOS POR EL PROFESOR
+   ======================================== */
+
+/* Selector de etiqueta: h2, header, nav, etc. */
+
+/* Selector de clase */
+.destacado {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Selector de ID */
+#contenido-principal {
+    min-height: 300px;
+}
+
+/* 9. DISEÑO RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    main {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
